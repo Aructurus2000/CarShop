@@ -5,6 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="styles/style.css"/>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
 <main class="main">
@@ -16,10 +17,10 @@
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="#">НАШ автопарк</a>
+                        <a href="#cars">НАШ автопарк</a>
                     </li>
                     <li>
-                        <a href="#">Забронировать</a>
+                        <a href="#order">Забронировать</a>
                     </li>
                 </ul>
             </nav>
@@ -35,7 +36,7 @@
                     От эксклюзивных спорткаров до гоночных шедевров — выбирайте мечту,
                     садитесь за руль и ощутите мощь премиального авто на полную!
                 </p>
-                <a href="#" class="button">Посмотреть автомобили</a>
+                <a href="#cars" class="button">Посмотреть автомобили</a>
             </div>
             <img src="images/main-car.png" alt="Main car" class="main-image"/>
         </div>
@@ -43,7 +44,7 @@
     <div class="black-block"></div>
 </main>
 
-<section class="cars">
+<section class="cars" id="cars">
     <div class="container">
         <h2>Выберите автомобиль</h2>
         <div class="cars-content">
@@ -84,7 +85,7 @@
                                     <div class="car-price">1100 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -112,7 +113,7 @@
                                     <div class="car-price">1250 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -142,7 +143,7 @@
                                     <div class="car-price">2600 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -172,7 +173,7 @@
                                     <div class="car-price">2900 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -202,7 +203,7 @@
                                     <div class="car-price">1450 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -232,7 +233,7 @@
                                     <div class="car-price">1350 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -259,7 +260,7 @@
                                     <div class="car-price">950 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -289,7 +290,7 @@
                                     <div class="car-price">800 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -319,7 +320,7 @@
                                     <div class="car-price">1100 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -349,7 +350,7 @@
                                     <div class="car-price">1600 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -380,7 +381,7 @@
                                     <div class="car-price">1000 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -411,7 +412,7 @@
                                     <div class="car-price">1000 $ <span>/сут</span></div>
                                 </li>
                             </ul>
-                            <a href="#" class="button white-button">Забронировать</a>
+                            <a href="#order" class="button white-button">Забронировать</a>
                         </div>
                     </div>
                 </article>
@@ -420,7 +421,7 @@
     </div>
 </section>
 
-<section class="order">
+<section class="order" id="order">
     <div class="container">
         <img src="images/order-car.png" alt="Order car"/>
         <form>
@@ -430,10 +431,10 @@
                 деталей и подтверждения бронирования
             </p>
             <label class="order-form">
-                <input type="text" placeholder="Автомобиль"/>
-                <input type="text" placeholder="Ваше имя"/>
-                <input type="text" placeholder="Ваш телефон"/>
-                <button class="button" type="button">Забронировать</button>
+                <input type="text" placeholder="Автомобиль" id="car"/>
+                <input type="text" placeholder="Ваше имя" id="name"/>
+                <input type="text" placeholder="Ваш телефон" id="phone"/>
+                <button class="button" type="button" id="order-action">Забронировать</button>
             </label>
         </form>
     </div>
