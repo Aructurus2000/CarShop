@@ -23,3 +23,41 @@ filterItems.forEach((item) => {
         carsContent.scrollIntoView({ behavior: 'instant' });
     };
 });
+
+// Получаем элементы формы один раз при загрузке страницы
+const carField = document.getElementById('car');
+const nameField = document.getElementById('name');
+const phoneField = document.getElementById('phone');
+
+// Обработчик для кнопки с id "order-action"
+document.getElementById('order-action').addEventListener('click', function () {
+    // Собираем поля в массив
+    const fields = [carField, nameField, phoneField];
+
+    let hasError = false;
+
+    // Проверяем все поля на заполненность
+    fields.forEach((field) => {
+        if (field.value.trim() === '') {
+            field.style.borderColor = 'red';
+            hasError = true;
+        } else {
+            field.style.borderColor = 'white';
+        }
+    });
+
+    // Дополнительная проверка для поля телефона
+    if (phoneField.value.trim().length < 10) {
+        phoneField.style.borderColor = 'red';
+        hasError = true;
+        alert('Номер телефона должен содержать не менее 10 символов.');
+    }
+
+    // Если все поля валидны
+    if (!hasError) {
+        alert('Спасибо за заявку! Мы скоро свяжемся с вами');
+
+        // Очищаем поля
+        fields.forEach((field) => (field.value = ''));
+    }
+});
