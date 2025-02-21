@@ -20,7 +20,7 @@ filterItems.forEach((item) => {
             }
         });
 
-        carsContent.scrollIntoView({ behavior: 'instant' });
+        carsContent.scrollIntoView({behavior: 'instant'});
     };
 });
 
